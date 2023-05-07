@@ -98,7 +98,7 @@ void MainLorentz::RightCovertToRepetitionLocation(RepetitionLocationCollection* 
 	int totLength = length << 1; //2*l
 	//if k1 is overlap, go to looping to get all repetition strings
 	int repetitionCount = k1 < length ? k1 : (length - 1); // k1 should less than length, do not overlap the cntr
-	for (int k1_i = (length - k2 > 1 ? length - k2 : 1) // avoid to repeat with left when l1 is 0
+	for (int k1_i = (length - k2 > 1 ? length - k2 : 1) // avoid to repeat with left when l2 is 0
 		; k1_i <= repetitionCount; k1_i++) {
 		RepetitionLocation* location = new RepetitionLocation();
 		location->length = totLength;
